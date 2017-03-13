@@ -1,3 +1,20 @@
+/*  SM BullFightmod
+ *
+ *  Copyright (C) 2017 Francisco 'Franc1sco' Garc√≠a
+ * 
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) 
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT 
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with 
+ * this program. If not, see http://www.gnu.org/licenses/.
+ */
+
 #pragma semicolon 1
 #include <sourcemod>
 #include <cstrike>
@@ -22,7 +39,7 @@ public Plugin:myinfo =
 	author = "Franc1sco Steam: franug",
 	description = "Original Mod of bullfighting for CSS",
 	version = PLUGIN_VERSION,
-	url = "www.servers-cfg.foroactivo.com"
+	url = "http://steamcommunity.com/id/franug"
 };
 
 public OnPluginStart()
@@ -131,8 +148,8 @@ public Action:Event_RoundStart(Handle:event, const String:name[], bool:dontBroad
         //EmitSoundToAll("toros/torero.mp3");
         SonidoT();
 
-        //PrintToChatAll("\x03Escribe \x04!reglas \x03en el chat para leer las reglas de este mod."); // espaÒol
-        //PrintToChatAll("\x03Escribe \x04!torero \x03para desactivarte el sonido ambiente."); // espaÒol
+        //PrintToChatAll("\x03Escribe \x04!reglas \x03en el chat para leer las reglas de este mod."); // espa√±ol
+        //PrintToChatAll("\x03Escribe \x04!torero \x03para desactivarte el sonido ambiente."); // espa√±ol
 
         PrintToChatAll("\x03Type \x04!rules \x03for show the rules of this mod."); //english
         PrintToChatAll("\x03Type \x04!torero \x03for disable/enable the ambient sound."); // english
